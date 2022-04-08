@@ -1,0 +1,9 @@
+name: test
+ on: [push]
+  jobs:
+   get_tag:
+    runs-on: ubuntu-latest
+    steps:
+     - name: first
+       run: |
+        echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//
