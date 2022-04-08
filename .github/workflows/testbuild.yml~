@@ -7,3 +7,4 @@ jobs:
    - name: first
      run: |
       echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
+      ls -l
